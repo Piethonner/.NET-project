@@ -2,15 +2,21 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Water-141677", "Water-141677\Water-141677.csproj", "{C04425E8-52DB-4517-95FF-17A8AC567B28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Water-141677.Tests", "Water-141677.Tests\Water-141677.Tests.csproj", "{F61E6ED0-1D30-45C7-A7B0-19337854C9DA}"
+EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C04425E8-52DB-4517-95FF-17A8AC567B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C04425E8-52DB-4517-95FF-17A8AC567B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C04425E8-52DB-4517-95FF-17A8AC567B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C04425E8-52DB-4517-95FF-17A8AC567B28}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {C04425E8-52DB-4517-95FF-17A8AC567B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {C04425E8-52DB-4517-95FF-17A8AC567B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {C04425E8-52DB-4517-95FF-17A8AC567B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {C04425E8-52DB-4517-95FF-17A8AC567B28}.Release|Any CPU.Build.0 = Release|Any CPU
+        {F61E6ED0-1D30-45C7-A7B0-19337854C9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {F61E6ED0-1D30-45C7-A7B0-19337854C9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {F61E6ED0-1D30-45C7-A7B0-19337854C9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {F61E6ED0-1D30-45C7-A7B0-19337854C9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
 EndGlobal
