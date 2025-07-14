@@ -147,9 +147,17 @@ namespace Zakupniczek
             };
             _btnUstawienia.Click += (s, e) => _menuUstawienia.Show(_btnUstawienia, 0, _btnUstawienia.Height);
 
-            Controls.AddRange(new Control[] {
-                _txtProdukt, _cmbKategoria, _btnDodaj, _lblStatystyki, _zakladki, _btnUstawienia, 
-                _btnZaznaczWszystko, _btnUsunZaznaczone
+            Controls.AddRange(new Control[]
+            {
+                _txtProdukt,
+                _cmbKategoria,
+                _btnDodaj,
+                _lblStatystyki,
+                _zakladki,
+                _btnUstawienia,
+                _sliderSzerokosci,
+                _btnZaznaczWszystko,
+                _btnUsunZaznaczone
             });
         }
         private void DodajProdukt()
