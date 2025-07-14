@@ -37,16 +37,33 @@ namespace Zakupniczek
 
         private void Wczytaj()
         {
-            if (!File.Exists(_sciezka)) return;
+            if (!File.Exists(_sciezka))
+                return;
 
             var linie = File.ReadAllLines(_sciezka);
+
             foreach (var linia in linie)
-                _lista.Items.Add(new ListViewItem(linia));
+            {
+                var czesci = linia.Split(new[] { "||" }, StringSplitOptions.None);
+                if (czesci.Length >= 2)
+                {
+                    var item = new ListViewItem(czesci[1]) { Tag = czesci[0] };
+                    _lista.Items.Add(item);
+                }
+                else
+                {
+                    _lista.Items.Add(new ListViewItem(linia));
+                }
+            }
         }
 
         private void Zapisz()
         {
-            File.WriteAllLines(_sciezka, _lista.Items.Cast<ListViewItem>().Select(i => i.Text));
+            var dane = _lista.Items
+                .Cast<ListViewItem>()
+                .Select(i => $"{(string?)i.Tag ?? "Ogólne"}||{i.Text}");
+
+            File.WriteAllLines(_sciezka, dane);
         }
     }
 }
